@@ -25,3 +25,20 @@ const factorialIfs = (n) => {
 }
   return n * factorial(n - 1);
 };
+
+const logRange = (min, max) => {
+  //debugger;
+  if(min > max){
+    return false;
+  }
+  console.log(min);
+  logRange(min + 1, max);
+  return true;
+}
+
+/*
+Этапы рекурсии:
+  1) Функции вызываются рекурсивно и записываются в call stack
+  2) Доходим до базы
+  3) Функции начнут завершать свою работу
+*/
