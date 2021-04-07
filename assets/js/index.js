@@ -16,3 +16,12 @@ const power = (num, exp) => {
   }
   return num * power(num, exp - 1); // recursion
 };
+
+const factorial = (n) => (n <= 1 ? 1 : n * factorial(n - 1));
+
+const factorialIfs = (n) => {
+  if (n <= 1) {
+    return 1;
+}
+  return n * factorial(n - 1);
+};
