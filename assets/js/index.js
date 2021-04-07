@@ -8,3 +8,11 @@ function countDown(num) {
   }
   return true; // base
 }
+
+const power = (num, exp) => {
+  //debugger;
+  if (exp <= 1) {
+    return num; // base
+  }
+  return num * power(num, exp - 1); // recursion
+};
