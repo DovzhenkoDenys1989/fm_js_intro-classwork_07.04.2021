@@ -28,10 +28,5 @@ const getFullName = function(name, surname){
 
 const getFullNameWithLog = withLog(getFullName);*/
 
-const res = getFullNameWithLog('John', 'Smith');
+//const res = getFullNameWithLog('John', 'Smith');
 
-const txt = 'test';
-
-console.log(Number.isNaN(NaN));  //true
-console.log(Number.isNaN(txt)); //false
-console.log(Number.isNaN(Number(txt))); //true
